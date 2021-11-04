@@ -24,6 +24,14 @@ public class ClienteService {
         repository.save(cliente);
     }
 
+    public Cliente buscarPorId(Integer id) {
+        return repository.findByClienteId(id);
+    }
+
+    public void actualizar(Cliente cliente) {
+        repository.save(cliente);
+    }
+
 
     
 }

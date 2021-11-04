@@ -27,7 +27,7 @@ public class Cliente {
     private String direccionAlternativa;
 
     @Column(name = "fecha_nacimiento")
-    @Temporal(TemporalType.DATE) // SOLO Poner esto si no queremos manejar HORA en el DB Server.
+    @Temporal(TemporalType.DATE) //SOLO Poner esto si no queremos manejar HORA en el DB Server.
     private Date fechaNacimiento;
 
     @JsonIgnore

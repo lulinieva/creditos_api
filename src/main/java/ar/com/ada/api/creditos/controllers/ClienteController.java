@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import ar.com.ada.api.creditos.entities.Cliente;
-import ar.com.ada.api.creditos.models.GenericResponse;
+import ar.com.ada.api.creditos.models.response.GenericResponse;
 import ar.com.ada.api.creditos.services.ClienteService;
 
 @RestController
@@ -33,5 +33,7 @@ public class ClienteController {
         respuesta.message = "El cliente fue creado con exito";
         return ResponseEntity.ok(respuesta);
     }
+
+    
 
 }
